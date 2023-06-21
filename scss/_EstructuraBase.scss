@@ -1,0 +1,60 @@
+
+
+
+/** Productos Grid **/
+
+.Productos-Secundarios{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "Producto1 Producto2"
+    "Producto3 Producto4"
+    ;
+    grid-gap: 3px;
+}
+
+.Producto1 {
+    grid-area: Producto1;
+}
+
+.Producto2 {
+    grid-area: Producto2;
+}
+
+.Producto3 {
+    grid-area: Producto3;
+}
+
+.Producto4 {
+    grid-area: Producto4;
+}
+
+/** Footer Flex **/ 
+
+
+.Blanco {
+    color: white;
+}
+
+.Footer-Flex {
+    background-color: #08605F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.Center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.Sub-Contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:  center;
+}

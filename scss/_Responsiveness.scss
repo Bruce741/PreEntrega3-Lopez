@@ -1,0 +1,111 @@
+/** Local Grid (DESKTOP) **/ 
+@media screen and (min-width:768px){
+    .Local-Grid {
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "Imagen Parrafo"
+        "Imagen Iframe"
+        ;
+
+    }
+
+    .Parrafo-local {
+        grid-area: Parrafo;
+    }
+
+    .Imagen-Local {
+        grid-area: Imagen;
+        align-self: center;
+    }
+
+    .Iframe-Local {
+        grid-area: Iframe;
+    }
+
+
+}
+
+
+/* Imagenes Responsive*/
+
+.Imagen-Local {
+    width: 100%;
+    padding: 4px;
+}
+
+.Productos-Secundarios img {
+    width: 100%;
+}
+#Producto-Principal {
+    @extend .Productos-Secundarios;
+    padding: 4px;
+}
+
+/* PRODUCTOS */ 
+
+.Lista-Todos-Productos {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "Producto1 Producto2"
+    "Producto3 Producto4 "
+    "Producto5 Producto6"
+    "Producto7 Producto8" 
+    "Producto9 Producto10" 
+    "Producto11 Producto12";
+    row-gap: 2px;
+    column-gap: 2px;
+    }
+
+    @for $i from 1 to 13 {
+        .Producto#{$i} {
+            grid-area: Producto#{$i};
+        }
+    }
+
+
+
+@media (min-width:768px){
+    .Lista-Todos-Productos {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "Producto1 Producto2 Producto3 Producto4"
+        "Producto5 Producto6 Producto7 Producto8"
+        "Producto9 Producto10 Producto11 Producto12";
+        row-gap: 2px;
+        column-gap: 2px;
+    }
+
+    @for $i from 1 to 13 {
+        .Producto#{$i} {
+            grid-area: Producto#{$i};
+        }
+    }
+}
+
+@media (min-width:321px) and (max-width:767px){
+    .Lista-Todos-Productos {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "Producto1 Producto2 Producto3" 
+        "Producto4 Producto5 Producto6"
+        "Producto7 Producto8 Producto9"
+        "Producto10 Producto11 Producto12";
+        row-gap: 2px;
+        column-gap: 2px;
+    }
+
+    @for $i from 1 to 13 {
+        .Producto#{$i} {
+            grid-area: Producto#{$i};
+        }
+    }
+}
+

@@ -1,0 +1,145 @@
+$Borde: solid 1px black;
+$Negro: black;
+
+
+
+/** GENERALES **/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}  
+
+body {
+    background-color: #D7FDF0;
+    font-family: Roboto;
+}
+
+.NavFondo {
+    background-color: #FFA3A5;
+}
+
+.Header {
+    margin: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.Padding-0 {
+    padding: 3px;
+}
+
+.MetodosPagoDiv {
+    background-color: #B4D6D3;
+    p:nth-child(2n) {
+        background-color: #78918f;
+    }
+}
+
+.A-Hover:hover {
+    font-size: larger;
+    color: red;
+
+}
+
+
+
+/* NavSecundario */ 
+
+.Nav-Secundario a {
+    text-decoration: none;
+    color: $Negro;
+}
+
+
+
+
+ /** INDEX **/
+
+/* Header */ 
+
+.Cuenta-Div {
+    display: flex;
+    border: $Borde;
+    justify-content: center;
+    .Cuenta-Div a{
+        color: $Negro;
+    }
+}
+
+
+.navbar {
+    border: $Borde;
+}
+
+.Main {
+    height: 50%;
+}
+
+.Logo {
+    width: 50%;
+}
+
+/* Main*/
+
+.ProductosDiv {
+    background-color: #B2FFD6;
+    padding: 2px;
+}
+
+.InformacionDiv {
+    margin: 1px;
+}
+
+.Local-Grid {
+    background-color: #B2FFD6;
+    padding: 1px;
+}
+
+.Iframe-Local {
+    width: 100%;
+}
+
+.Separador {
+    background-color: #dbb7b7;
+    height: 2rem;
+}
+
+/* CONTACTO */
+
+ .Borde {
+    border: $Borde
+ }
+
+.Contacto-Main {
+    background-color: #B2FFD6;
+}
+
+.Contacto-Img {
+    width: 50%;
+    padding: 4px;
+}
+
+.Form-Contacto {
+    background-color:#D7FDF0 ;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Productos */ 
+
+
+.Lista-Todos-Productos {
+    background-color: #dbb7b7;    
+    img {
+        width: 100%;
+    }
+}
+
+
