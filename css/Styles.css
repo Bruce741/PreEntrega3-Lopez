@@ -123,6 +123,15 @@ a {
   width: 100%;
 }
 
+/* Conocenos */
+.Form-Fondo {
+  background-color: #78918f;
+}
+
+.VideoConocenos {
+  width: 100%;
+}
+
 /** Local Grid (DESKTOP) **/
 @media screen and (min-width: 768px) {
   .Local-Grid {
@@ -306,6 +315,10 @@ a {
     grid-area: Producto12;
   }
 }
+#Producto-Principal {
+  width: 100%;
+}
+
 /** Productos Grid **/
 .Productos-Secundarios, #Producto-Principal {
   display: grid;
